@@ -46,7 +46,7 @@ class RAGEvaluator:
         try:
             import google.generativeai as genai
             genai.configure(api_key=self.gemini_api_key)
-            self.gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+            self.gemini_model = genai.GenerativeModel('gemini-2.5-flash')
             print("✓ Gemini initialized")
         except ImportError:
             print("⚠ google-generativeai not installed. Run: pip install google-generativeai")
